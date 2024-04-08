@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+:root {
+  --color-blue: #457b9d;
+  --color-black: #171719;
+  --color-red: #e63946;
+}
+
+body{
+  background-color: #2196f3;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-black);
+  background-color: #fdfdfd;
+  font-size: 1.6rem;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  font-style: italic;
+  background: linear-gradient(to right, #2196f3,rgb(173, 32, 173), #f44336);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  padding: 0 2vw;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+.controls {
+  display: flex;
+  align-items: start;
+}
+
+.controls h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--color-red);
+}
+
+.controls-inner {
+  background-color: #fdcb4c;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.grid-size {
+  margin-bottom: 0.5rem;
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.apply,.eraser{
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--color-red);
+  color: #fefefe;
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+.hint{
+  position: relative;
+  left: 50px;
+  top: -25px;
+  background-color: transparent;
+}
+
+.reset {
+  font-weight: bold;
+  font-size: 2.8rem;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-red);
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+input{
+  color: var(--color-red);
+}
+
+.grid {
+  border: 5px solid black;
+  background-color: black;
+  border-radius: 1rem;
+  width: 70rem;
+  height: 70rem;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.box {
+  border: 0.5px solid rgba(244, 8, 8, 0.05);
+  border-radius: 0.5rem;
+}
+
+.box.active {
+  background-color: var(--color-blue);
+}
